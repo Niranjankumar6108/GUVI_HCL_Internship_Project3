@@ -45,8 +45,8 @@ GUVI_HCL_Internship_Project3
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/bangalore-home-price-prediction.git
-   cd bangalore-home-price-prediction
+   git clone https://github.com/Niranjankumar6108/GUVI_HCL_Internship_Project3.git
+   cd GUVI_HCL_Internship_Project3
 
 2. **Create virtual environment (recommended)**
    ```bash
