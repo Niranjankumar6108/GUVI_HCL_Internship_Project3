@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bangalore Home Price Prediction</title>
+    <style>
+        body { font-family: Arial; background: #f2f2f2; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .container {
+            background: rgba(255, 255, 255, 0.9); /* Slight transparency to show background */
+            padding: 20px;
+            border-radius: 12px;
+            width: 400px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        #prediction {
+            margin-top: 20px;
+            font-weight: bold;
+            color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏡 Bangalore Home Price Prediction</h1>
+        <form action="/predict" method="post">
+            <label>Area (Square Feet)</label>
+            <input type="number" name="sqft" required>
+
+            <label>BHK</label>
+            <input type="number" name="bhk" min="1" required>
+
+            <label>Bath</label>
+            <input type="number" name="bath" min="1" required>
+
+            <label>Location</label>
+            <select name="location" required>
+                <option disabled selected>Choose a Location</option>
+                {% for loc in locations %}
+                    <option>{{ loc.title() }}</option>
+                {% endfor %}
+            </select>
+
+            <button type="submit">Estimate Price</button>
+        </form>
+
+        {% if prediction_text %}
+            <div id="prediction">{{ prediction_text }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
