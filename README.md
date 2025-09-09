@@ -21,8 +21,9 @@ The model is trained using Linear Regression with one-hot encoded location data.
 
 ## 📂 Project Structure
 
-Bangalore-Home-Price-Prediction
+GUVI_HCL_Internship_Project3
 │
+├── Bangalore-Home-Price-Prediction.ipynb  # Jupyter Notebook with complete code
 
 ├── app.py # Flask backend
 
