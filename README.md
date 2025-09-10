@@ -74,13 +74,13 @@ GUVI_HCL_Internship_Project3
     👉 http://127.0.0.1:5000/
 
 ## 📊 Input Example
-    Area (Square Feet): 1200
-    BHK: 3
+    Area (Square Feet): 1000
+    BHK: 2
     Bath: 2
-    Location: Whitefield
+    Location: 1St Phase Jp Nagar
 
 ## Output:
-    Estimated Price: 85.6 Lakh
+    Estimated Price: 83.87 Lakh
 
 <img width="943" height="815" alt="image" src="https://github.com/user-attachments/assets/75a62fc5-c510-417d-be87-fcaa874c198f" />
 
